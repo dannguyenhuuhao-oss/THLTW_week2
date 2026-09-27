@@ -1,0 +1,52 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Định dạng văn bản</title>
+
+    <style type="text/css">
+        h1, #p_aqua {
+            background-color: lightblue;
+            text-align: left;
+        }
+
+        p {
+            background-color: pink;
+            text-decoration: overline;
+            color: maroon;
+            text-indent: 2.5em;
+            text-align: left;
+        }
+
+        .p_yellow {
+            background-color: gold;
+            border: 2px solid green;
+            text-decoration: dashed;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Highlight văn bản</h1>
+
+    <p>
+        Đây là đoạn <span id="p_aqua">văn được</span> Highlight.
+        He's the one who likes all our pretty songs, and he likes to sing along
+        and he likes to shoot his gun, but he knows not what it means
+        and I say he's the one who likes all our pretty songs, and he likes
+        to sing along and he likes to shoot his gun, but he knows not what it means,
+        and I say, "Yeah"
+    </p>
+
+    <p>
+        Đây là đoạn <span class="p_yellow">văn thứ 2 được</span> Highlight
+    </p>
+
+</body>
+</html>

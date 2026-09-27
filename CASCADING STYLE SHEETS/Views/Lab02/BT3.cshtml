@@ -1,0 +1,358 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 3: Tạo các mẫu Table</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            padding: 30px;
+            color: purple;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        h2 {
+            color: #b30000;
+            text-decoration: underline;
+            font-size: 16px;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        /* ---------- Bài 1 ---------- */
+        table.bai1 {
+            border-collapse: collapse;
+            width: 500px;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+            table.bai1 th {
+                background-color: lightcoral;
+                color: black;
+                padding: 6px 10px;
+                text-align: left;
+                border: 1px solid black;
+            }
+
+            table.bai1 td {
+                padding: 6px 10px;
+                border: 1px solid black;
+                color: black;
+            }
+
+                table.bai1 td.col1 {
+                    background-color: lightblue;
+                }
+
+                table.bai1 td.col-rest {
+                    background-color:paleturquoise ;
+                    font-style: normal;
+                    font-weight: normal;
+                }
+
+        /* ---------- Bài 2 ---------- */
+        table.bai2 {
+            border-collapse: collapse;
+            width: 650px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+        }
+
+            table.bai2 th {
+                background-color: moccasin;
+                text-align: left;
+                padding: 6px 8px;
+                border-bottom: 2px solid #ccc;
+                color: #333;
+            }
+
+            table.bai2 td {
+                padding: 8px;
+                border-bottom: 1px solid #ddd;
+                vertical-align: top;
+            }
+
+            table.bai2 .topic-title {
+                color: aquamarine;
+                font-weight: bold;
+                font-size: 14px;
+            }
+
+                table.bai2 .topic-title a {
+                    color: palevioletred;
+                    text-decoration: none;
+                }
+
+            table.bai2 .sub {
+                color: sandybrown;
+                font-size: 12px;
+            }
+
+                table.bai2 .sub a {
+                    color: goldenrod;
+                    text-decoration: none;
+                }
+
+            table.bai2 .center {
+                text-align: center;
+            }
+
+            table.bai2 .lastpost {
+                color: blueviolet;
+                font-size: 12px;
+            }
+
+                table.bai2 .lastpost .who {
+                    color: hotpink;
+                }
+
+        .lock-icon {
+            color: yellow;
+            margin-right: 4px;
+        }
+
+        .msg-icon {
+            color: peru;
+            margin-right: 4px;
+        }
+
+        /* ---------- Bài 3: Eggnog ---------- */
+        table.bai3 {
+            border-collapse: collapse;
+            width: 550px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+        }
+
+            table.bai3 th {
+                background-color: darksalmon;
+                color: orangered;
+                text-align: left;
+                padding: 8px 12px;
+            }
+
+            table.bai3 td {
+                padding: 6px 12px;
+                color: darkolivegreen;
+            }
+
+            table.bai3 tr:nth-child(odd) td {
+                background-color: palevioletred;
+            }
+
+            table.bai3 tr:nth-child(even) td {
+                background-color: red;
+            }
+
+        ol.steps {
+            width: 550px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            padding-left: 20px;
+        }
+
+            ol.steps li {
+                margin-bottom: 8px;
+            }
+
+        /* ---------- Bài 4: Power Mac G5 ---------- */
+        table.bai4 {
+            border-collapse: collapse;
+            width: 650px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+        }
+
+            table.bai4 caption {
+                text-align: right;
+                font-style: italic;
+                color: #555;
+                margin-bottom: 4px;
+                font-size: 11px;
+            }
+
+            table.bai4 th {
+                background: #cccccc;
+                text-transform: uppercase;
+                text-align: left;
+                padding: 8px 10px;
+                font-size: 11px;
+                letter-spacing: 0.5px;
+            }
+
+            table.bai4 td {
+                padding: 8px 10px;
+                border-top: 1px solid #ddd;
+            }
+
+                table.bai4 td.label {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    background: #f2f2f2;
+                    font-size: 11px;
+                }
+    </style>
+</head>
+<body>
+
+    <h1><u>Bài tập : Tạo các mẫu Table</u></h1>
+
+    <div class="section">
+        <h2>Bài 1</h2>
+        <table class="bai1">
+            <tr>
+                <th>header1</th>
+                <th>header2</th>
+                <th>header3</th>
+                <th>header4</th>
+            </tr>
+            <tr>
+                <td class="col1">column1</td>
+                <td class="col-rest">column2</td>
+                <td class="col-rest">column3</td>
+                <td class="col-rest">column4</td>
+            </tr>
+            <tr>
+                <td class="col1">column1</td>
+                <td class="col-rest">column2</td>
+                <td class="col-rest">column3</td>
+                <td class="col-rest">column4</td>
+            </tr>
+            <tr>
+                <td class="col1">column1</td>
+                <td class="col-rest">column2</td>
+                <td class="col-rest">column3</td>
+                <td class="col-rest">column4</td>
+            </tr>
+            <tr>
+                <td class="col1">column1</td>
+                <td class="col-rest">column2</td>
+                <td class="col-rest">column3</td>
+                <td class="col-rest">column4</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Bài 2</h2>
+        <table class="bai2">
+            <tr>
+                <th>Topic</th>
+                <th class="center">Posts</th>
+                <th class="center">Views</th>
+                <th>Last Post</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="topic-title"><span class="lock-icon">&#128274;</span>Posting Guidelines</div>
+                    <div class="sub">Posted in <a href="#">Please Read First!</a> by Joe Gillespie</div>
+                </td>
+                <td class="center">1</td>
+                <td class="center">288</td>
+                <td class="lastpost">Dec 21, 2003<br><span class="who">by Joe Gillespie</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="topic-title"><span class="lock-icon">&#128274;</span>Forum Rules</div>
+                    <div class="sub">Posted in <a href="#">Please Read First!</a> by Joe Gillespie</div>
+                </td>
+                <td class="center">1</td>
+                <td class="center">2023</td>
+                <td class="lastpost">Dec 21, 2003<br><span class="who">by Joe Gillespie</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="topic-title"><span class="msg-icon">&#128172;</span>A suitable Word Template</div>
+                    <div class="sub">Posted in <a href="#">Web Design Software</a> by Wilson Lagg</div>
+                </td>
+                <td class="center">2</td>
+                <td class="center">199</td>
+                <td class="lastpost">Mar 28, 2008<br><span class="who">by Shahzad Asif</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="topic-title"><span class="msg-icon">&#128172;</span>few HTML and CSS issues</div>
+                    <div class="sub">Posted in <a href="#">Layout</a> by Jade M</div>
+                </td>
+                <td class="center">3</td>
+                <td class="center">1</td>
+                <td class="lastpost">Mar 28, 2008<br><span class="who">by Shahzad Asif</span></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Bài 3</h2>
+        <table class="bai3">
+            <tr>
+                <th>Ingredients</th>
+                <th>serves 12</th>
+                <th>serves 24</th>
+            </tr>
+            <tr><td>milk</td><td>1 quart</td><td>2 quart</td></tr>
+            <tr><td>cinnamon sticks</td><td>2</td><td>1</td></tr>
+            <tr><td>vanilla bean, split</td><td>1</td><td>2</td></tr>
+            <tr><td>cloves</td><td>5</td><td>10</td></tr>
+            <tr><td>mace</td><td>10 blades</td><td>20 blades</td></tr>
+            <tr><td>egg yolks</td><td>12</td><td>24</td></tr>
+            <tr><td>cups sugar</td><td>1 &frac12; cups</td><td>3 cups</td></tr>
+            <tr><td>dark rum</td><td>1 &frac12; cups</td><td>3 cups</td></tr>
+            <tr><td>brandy</td><td>1 &frac12; cups</td><td>3 cups</td></tr>
+            <tr><td>vanilla</td><td>1 tbsp</td><td>2 tbsp</td></tr>
+            <tr><td>half-and-half or light cream</td><td>1 quart</td><td>2 quart</td></tr>
+            <tr><td>Freshly grated nutmeg to taste</td><td></td><td></td></tr>
+        </table>
+        <ol class="steps">
+            <li>Combine milk and spices including vanilla bean in a heavy saucepan and let them infuse over lowest possible heat for 5 minutes. Meanwhile, combine yolks and sugar in a large bowl and whisk until mixed.</li>
+            <li>Bring milk to a boil and gradually whisk it into the yolk-mixture. Return the mixture to the saucepan. Cook over medium heat, stirring steadily with a wooden spoon, for 2 to 3 minutes, or until foam subsides and mixture thickens to consistency of heavy cream. (Mixture should thickly coat the back of a wooden spoon.) Do not boil, or mixture will curdle.</li>
+            <li>Strain mixture into a large bowl and let cool to room temperature. Stir in rum, brandy, half-and-half, vanilla and nutmeg.</li>
+            <li>Refrigerate eggnog for at least 2 hours, preferably overnight. Just before serving, dust top of eggnog with additional nutmeg.</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>Bài 4</h2>
+        <table class="bai4">
+            <caption>Table 1: Power Mac G5 tech specs</caption>
+            <tr>
+                <th>Configurations</th>
+                <th>Dual 1.8GHz</th>
+                <th>Dual 2GHz</th>
+                <th>Dual 2.5GHz</th>
+            </tr>
+            <tr>
+                <td class="label">Model</td>
+                <td>M9454LL/A</td>
+                <td>M9455LL/A</td>
+                <td>M9457LL/A</td>
+            </tr>
+            <tr>
+                <td class="label">G5 Processor</td>
+                <td>Dual 1.8GHz PowerPC G5</td>
+                <td>Dual 2GHz PowerPC G5</td>
+                <td>Dual 2.5GHz PowerPC G5</td>
+            </tr>
+            <tr>
+                <td class="label">Frontside Bus</td>
+                <td>900MHz per processor</td>
+                <td>1GHz per processor</td>
+                <td>1.25GHz per processor</td>
+            </tr>
+            <tr>
+                <td class="label">Level2 Cache</td>
+                <td>512K per processor</td>
+                <td>512K per processor</td>
+                <td>512K per processor</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
